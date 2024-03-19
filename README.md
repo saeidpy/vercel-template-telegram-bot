@@ -23,6 +23,12 @@ yarn dev
 
 ## Production
 
+After deployed on vercel please run this code for set your hook with vercel url you deployed
+
+```
+curl -X POST https://api.telegram.org/bot<YOUR-BOT-TOKEN>/setWebhook -H "Content-type: application/json" -d '{"url": "<vercel-url-deployed>"}'
+```
+
 You can fork this template and do the necessary changes you need. Then you when are done with your changes simply goto [vercel git import](https://vercel.com/import/git).
 
 Reference to [this update](https://vercel.com/docs/security/deployment-protection#migrating-to-standard-protection), you need turn off `Vercel Authentication`, Settings => Deployment Protection
